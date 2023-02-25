@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/about.png</file>
+        <file>img/add-folder.png</file>
+        <file>img/clipboard.png</file>
+        <file>img/cutting.png</file>
+        <file>img/folder.png</file>
+        <file>img/image.png</file>
+        <file>img/logout.png</file>
+        <file>img/paste.png</file>
+        <file>img/redo.png</file>
+        <file>img/save-file.png</file>
+        <file>img/undo.png</file>
+    </qresource>
+</RCC>

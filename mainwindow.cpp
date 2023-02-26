@@ -6,6 +6,8 @@
 #include<QMessageBox>
 #include<QFont>
 #include<QFontDialog>
+#include<QTextFormat>
+#include<QTextCharFormat>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -129,5 +131,47 @@ void MainWindow::on_actionfont_style_triggered()
         ui->textEdit->setFont(font);
     }
     else return;
+}
+
+
+void MainWindow::on_actionbold_triggered(bool isBold)
+{
+    QTextCharFormat fmt;
+    fmt.setFontWeight(isBold ? QFont::Normal : QFont::Bold);
+    QTextCursor cursor = ui->textEdit->textCursor();
+    if (!cursor.hasSelection())
+        cursor.select(QTextCursor::WordUnderCursor);
+    cursor.mergeCharFormat(fmt);
+    ui->textEdit->mergeCurrentCharFormat(fmt);
+}
+
+
+void MainWindow::on_actionUnbold_triggered(bool isBold)
+{
+    QTextCharFormat fmt;
+    fmt.setFontWeight(isBold ? QFont::Bold : QFont::Normal);
+    QTextCursor cursor = ui->textEdit->textCursor();
+    if (!cursor.hasSelection())
+        cursor.select(QTextCursor::WordUnderCursor);
+    cursor.mergeCharFormat(fmt);
+    ui->textEdit->mergeCurrentCharFormat(fmt);
+}
+
+
+void MainWindow::on_actionSupScript_triggered()
+{
+    QTextCharFormat format;
+       format.setVerticalAlignment(QTextCharFormat::AlignSuperScript);
+       if(ui->textEdit->hasFocus())
+          ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+void MainWindow::on_actionSubScript_triggered()
+{
+    QTextCharFormat format;
+       format.setVerticalAlignment(QTextCharFormat::AlignSubScript);
+       if(ui->textEdit->hasFocus())
+          ui->textEdit->mergeCurrentCharFormat(format);
 }
 

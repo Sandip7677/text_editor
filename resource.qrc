@@ -12,6 +12,10 @@
         <file>img/save-file.png</file>
         <file>img/undo.png</file>
         <file>img/font.png</file>
+        <file>img/bold.png</file>
+        <file>img/subscript.png</file>
+        <file>img/text-font.png</file>
+        <file>img/text-format.png</file>
     </qresource>
     <qresource prefix="/">
         <file>img/font.png</file>

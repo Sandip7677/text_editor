@@ -40,6 +40,12 @@ private slots:
 
     void on_actionfont_style_triggered();
 
+    void on_actionbold_triggered(bool checked);
+
+    void on_actionUnbold_triggered(bool checked);
+
+    void on_actionSupScript_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString file_path;

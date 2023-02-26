@@ -60,14 +60,17 @@
    </widget>
    <widget class="QMenu" name="menuFont">
     <property name="title">
-     <string>Font</string>
+     <string>Font Style</string>
     </property>
-    <addaction name="actionfont_style"/>
+    <addaction name="actionbold"/>
+    <addaction name="actionUnbold"/>
+    <addaction name="actionSupScript"/>
+    <addaction name="actionSubScript"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
-   <addaction name="menuAbout"/>
    <addaction name="menuFont"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNew">
@@ -169,13 +172,40 @@
     <string>Exit</string>
    </property>
   </action>
-  <action name="actionfont_style">
+  <action name="actionbold">
    <property name="icon">
     <iconset resource="resource.qrc">
-     <normaloff>:/rec/img/font.png</normaloff>:/rec/img/font.png</iconset>
+     <normaloff>:/rec/img/bold.png</normaloff>:/rec/img/bold.png</iconset>
    </property>
    <property name="text">
-    <string>font style</string>
+    <string>bold</string>
+   </property>
+  </action>
+  <action name="actionUnbold">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/text-font.png</normaloff>:/rec/img/text-font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Unbold</string>
+   </property>
+  </action>
+  <action name="actionSupScript">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/text-format.png</normaloff>:/rec/img/text-format.png</iconset>
+   </property>
+   <property name="text">
+    <string>SupScript</string>
+   </property>
+  </action>
+  <action name="actionSubScript">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/subscript.png</normaloff>:/rec/img/subscript.png</iconset>
+   </property>
+   <property name="text">
+    <string>SubScript</string>
    </property>
   </action>
  </widget>

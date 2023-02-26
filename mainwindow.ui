@@ -58,9 +58,16 @@
     </property>
     <addaction name="actionAbout_me"/>
    </widget>
+   <widget class="QMenu" name="menuFont">
+    <property name="title">
+     <string>Font</string>
+    </property>
+    <addaction name="actionfont_style"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuAbout"/>
+   <addaction name="menuFont"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNew">
@@ -160,6 +167,15 @@
    </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionfont_style">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/font.png</normaloff>:/rec/img/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>font style</string>
    </property>
   </action>
  </widget>

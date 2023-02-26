@@ -38,6 +38,8 @@ private slots:
 
     void on_actionExit_triggered();
 
+    void on_actionfont_style_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString file_path;

@@ -108,11 +108,33 @@ void MainWindow::on_actionUndo_triggered()
 void MainWindow::on_actionAbout_me_triggered()
 {
     QString about_text;
-    about_text +="Personal-info:\n";
-    about_text +="\tName : Anuj Kumar\n";
-    about_text +="\tFather's Name : Arjun Prasad\n";
-    about_text +="\tD.O.B : 15-04-2002\n";
-
+    about_text += "<p style='color:#ff0000; font-weight:bold; font-size:20px;'>PERSONAL INFO:</p>";
+    about_text += "<p>Name: Anuj Kumar</p><p>DOB: 15-04-2002</p><p>Contact: 6203330169</p><p>Email: anujmehta3578@gmail.com</p><p>Github: https://github.com/Sandip7677</p><p>GFG: https://auth.geeksforgeeks.org/user/anujkumar20/</p>";
+    about_text += "<p style='color:#ff0000; font-weight:bold; font-size:20px;'>EDUCATION:</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>MATRICULATION:</p>";
+    about_text += "<p>A A GURIYADAMAR HIGH SCHOOL PHOKHRAHA PALAMU</p><p><pre>2017             86 %</pre>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>INTERMEDIATE:</p>";
+    about_text += "<p>MANAVDEVI DEDICATED INTER COLLEGE PALAMU</p><p><pre>2017 - 2019           84.2%</pre>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>B.TECH:</p>";
+    about_text += "<p>GOVERNMENT ENGINEERING COLLEGE DUMKA</p><p><pre>2020 - Present        9.93SGPA IN 2ND SEMESTER</pre>";
+    about_text += "<p style='color:#ff0000; font-weight:bold; font-size:20px;'>INTERNSHIP:</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>Web Development:</p>";
+    about_text += "<p>HashHackCode, Virtual</p><p>Feb 2023 - Present</p><p>Mentoring college and school students on frontend development concept by creative learning</p>";
+    about_text += "<p style='color:#ff0000; font-weight:bold; font-size:20px;'>PROJECTS:</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>Super_market_billing:</p>";
+    about_text += "<p>C++ project to implement Super Market Billing using C++,OOPS and DSA.</p><p>Github link: https://github.com/Sandip7677/Super_Mproject</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:16px;'>Hospital Management:</p>";
+    about_text += "<p>Front-end website for hospital using HTML and CSS.</p><p>Github link: https://github.com/Sandip7677/Super_Mproject</p>";
+    about_text += "<p style='color:#ff0000; font-weight:bold; font-size:20px;'>SKILLS:</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>c++</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>DSA</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>OOPS</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>HTML</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>CSS</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>JavaScript</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>Git</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>Github</p>";
+    about_text += "<p style='color:#ffaa00; font-family:sans-serif; font-size:14px;'>English Proficiency</p>";
     QMessageBox::about(this,"Resume",about_text);
 }
 
